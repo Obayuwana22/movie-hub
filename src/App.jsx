@@ -30,7 +30,7 @@ function App() {
     try {
       const endPoint = query
         ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
-        : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+        : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`
 
       const response = await axios(endPoint, {
         headers: {
