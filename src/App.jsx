@@ -92,7 +92,7 @@ function App() {
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
 
-        {trendingMovies.length > 0 && (
+        {/* {trendingMovies.length > 0 && (
           <section className="trending">
             <h2>Trending Movies</h2>
             {trendingMoviesLoading ? (
@@ -108,7 +108,7 @@ function App() {
               </ul>
             )}
           </section>
-        )}
+        )} */}
 
         <section className="all-movies">
           <h2 className="mt-[40px]">All Movies</h2>
