@@ -9,7 +9,7 @@ import { getTrendingMovies, updateSearchCount } from "./appwrite";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
-const ACCESS_TOKEN_AUTH = import.meta.env.VITE_ACCESS_TOKEN_AUTH;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -35,7 +35,7 @@ function App() {
       const response = await axios(endPoint, {
         headers: {
           accept: "application/json",
-          Authorization: `Bearer ${ACCESS_TOKEN_AUTH}`,
+          Authorization: `Bearer ${API_KEY}`,
         },
       });
       const data = response.data;
