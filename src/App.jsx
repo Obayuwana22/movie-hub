@@ -39,7 +39,7 @@ function App() {
         },
       });
       const data = response.data;
-      console.log(data);
+      // console.log(data);
 
       if (!data.results || data.results.length === 0) {
         setErrorMessage("No movies found");
@@ -98,9 +98,9 @@ function App() {
             {trendingMoviesLoading ? (
               <Spinner />
             ) : (
-              <ul>
+              <ul className="cursor-pointer">
                 {trendingMovies.map((movie, index) => (
-                  <li key={movie.$id}>
+                  <li key={movie.$id} >
                     <p>{index + 1}</p>
                     <img src={movie.poster_url} alt={movie.title} />
                   </li>
