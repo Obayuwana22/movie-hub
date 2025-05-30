@@ -39,7 +39,7 @@ function App() {
         },
       });
       const data = response.data;
-      // console.log(data);
+      console.log(data);
 
       if (!data.results || data.results.length === 0) {
         setErrorMessage("No movies found");
@@ -80,9 +80,9 @@ function App() {
   }, []);
 
   return (
-    <main>
+    <main className="overflow-hidden">
       <div className="pattern" />
-      <div className="wrapper">
+      <div className="wrapper ">
         <header>
           <img src="./hero.png" alt="Hero Banner" />
           <h1>
