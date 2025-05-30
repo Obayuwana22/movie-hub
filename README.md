@@ -1,3 +1,3 @@
 Live link
 
-https://movie-hub-ecru.vercel.app/
+https://movie-hub-eight-xi.vercel.app/
